@@ -61,7 +61,7 @@ def close_issue_status(driver, url, cookies):
 
 def close_by_id(id, cookies):
     # Edge WebDriver 路径
-    webdriver_path = "D:\\Application\\edgedriver_win64_131\\msedgedriver.exe"
+    webdriver_path = "D:\\Application\\edgedriver_win64\\msedgedriver.exe"
     # 设置 Microsoft Edge 浏览器选项
     edge_options = Options()
     edge_options.add_argument("--headless")  # 无头模式（不显示浏览器界面）
@@ -155,7 +155,7 @@ def close_by_id(id, cookies):
 
 def main():
     # Edge WebDriver 路径
-    edge_driver_path = "D:\\Application\\edgedriver_win64_131\\msedgedriver.exe"
+    edge_driver_path = "D:\\Application\\\edgedriver_win64\\msedgedriver.exe"
 
     # 设置 Microsoft Edge WebDriver 服务
     service = Service(executable_path=edge_driver_path)
@@ -165,9 +165,9 @@ def main():
     cookies = [
         {
             "name": "_redmine_session",
-            "value": "S1JXdm8wWjlCNEJKQ2pxRW1BUmFTOXBxVmRpZzFhVFF4SUlQdUFuZWovdDZyNmVUeEhRN3FiNHd5NWFBVFJ1NmRtaUV4K0JFMFp1UmFrWDhZV0o5OENFdHRsbk5Rc2pOTGN3Ni9Ib1BHYUhMR0RRQUYxbUtjZHJoS2JKSHpNWFExTmtOMTBTYmtHZHk2ZkJHMmhNV0JkUXpsR1Y4YVhoTVZkemdMeEJTQ3dEdVUzdUNHcmpSTk4wTDZralNob01sa3FldXpkMnhuR0MzampKaW0yZmEweUo5ZXBiblhwM1dmdkZFNU9UWUNvZklLYWxmV2Y0ZmkvQUsrNnZPL2RJL3pHUXhNS056TENlQlJjM2FYZnlyOGJpd016ZzR3NStjZHNnVjY0MGdDWldUZUphbWYySHFKUFdyTXdZZndIdnB5T1ptdDB5RGNhckcxT2F4bzhjWndkMU5Lc1dCYzQ5c1RGa0RVWlQ5U2M2VEpiNkNlRjQ0UmtWbVBkejRsM0xsby9YbzJ4WVFiNnBLS2Y4WmFaTml0LzgrMzZCemhUVFB2ZUxBQXpOS01TaVVmTkd5ckp0M1F5eHVibjFMRG5CYTZlTS9mY3RXc0ZEb3pnSWNRRnl2MnRHYkZvWnFkYkNZZDU2enBNQ1ZPT3EzUUQ3OGcvUDliOEhXOHNjUktHeHJRWThXQXdpTzc0a1Z6eDI5TW1sYWFidXViOGNIdTY5cmRzR0xxS2hROEt3PS0tMUlFdGlrSERROXRZR3V6ZHBXV1EwUT09--a3e2963f02d7e30a6c74fd5ed8a0fa33f3909ed2",
+            "value": "emJ1ZUY4N0xFaG5KUHhzSTFKMjRCOUF0YTI2VUJTMVJqY0RzSnM4ZkozK01FeVgyaFNRMWVlSHFHaHIvRHI3dGRNbTREZ2U3eHNhMDFEQ0Q1c1ZPY0JNQWp6Z2FDZDZYWXBsUjcvTHhhZlkwMTRuOW5lTTVOUGRyVGpqb0RaenVUTzBuejFPa3crbDVaYnhRQ2gyOHU2WWNDeUcvdnpiYmsvVjkrbHREUmNxZnVlRG01a051RDNwaVpHNzhodGNFVXZsRDdmYjl5V0JEK0NVeGxSWVd0Q3Npem1vSFNlbFRrckIxT2cvK0lveUhaRUZoc1piWXIwZGZvaUtHRVptWXV6VzNBZ29OVEhhUEJCRGFrZ1ZkMi81dDRDblppM0crSU1GSmZVVUlDMmhuZWZFdDNCTUQ1Tk1NRld5d1E3VGNyNUczM1Z5MDBFWmtzSHIvTWRWZEU2RVZzSElHcjdxcS95bGl3bjYxMkQ1dlU3UTN5Qlk5Y2x3emwwcmg4REQ3MTJhdHlnNGM2Rkk2NmlSa0t2cXE0TVBsZWZ1ckdyYnhDSEVJeE9WdjJNM1hYU2ZQN3Z0WUlBZDUrYmU0SWF0Y0dRb2FvL0gwdWtnYjAwZ1JnVzBHc1hjd2tqM1gwOCtVajlJZUpSQWxmdGFDcnpTS3ByZFZ5Y0hzYjNzVXdUazUtLXd1R0cremY2ekhJQmg4aUJkQktSVnc9PQ%3D%3D--498b184e0d442435ef76603ab6904e99da976514",
         },
-        {"name": "autologin", "value": "3c2bd6bfce32e6e0292863704c526ce3a9349352"},
+        {"name": "autologin", "value": "6a27b167495efa6ce451069be85c4eb9866a003b"},
     ]
 
     try:
@@ -176,7 +176,9 @@ def main():
         # 调用封装的函数
         close_issue_status(
             driver,
-            "http://demo.nghinsights.com:1234/redmine/work_time/show/p05029?day=5&month=3&prj=461&user=122&year=2025",
+            #"http://demo.nghinsights.com:1234/redmine/work_time/show/p05029?day=5&month=3&prj=461&user=122&year=2025",
+            # "http://demo.nghinsights.com:1234/redmine/work_time/index?day=19&month=3&prj=461&user=122&year=2025",
+              "http://demo.nghinsights.com:1234/redmine/work_time/index?day=13&month=5&prj=457&user=122&year=2025",
             cookies,
         )
 

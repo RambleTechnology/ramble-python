@@ -1,0 +1,126 @@
+{
+    "code": 200,
+    "data": [
+        [
+            {
+                "labelIndex": "8a774bb06771470c8edf70d96459e4ce",
+                "labelName": "程健羽",
+                "labelTypeLogicId": "0011894228760942075904",
+                "pixelX": 160.75,
+                "pixelY": 43.0,
+                "longitude": 106.041325,
+                "latitude": 27.0155
+            },
+            {
+                "labelIndex": "882b7243fdc44651a49aeda8f602bafc",
+                "labelName": "王青云",
+                "labelTypeLogicId": "0011894228760942075904",
+                "pixelX": 160.75,
+                "pixelY": 43.0,
+                "longitude": 106.041325,
+                "latitude": 27.0155
+            }
+        ]
+    ]
+}
+
+
+{
+    "body": "{\"code\":200,\"data\":{\"osdDevice\":{\"sn\":\"1581F5BKD224G00B4LZM\",\"timestamp\":1741756638477,\"time\":\"2025-03-12T13:17:18\",\"longitude\":0.0,\"latitude\":-0.0,\"height\":1209.5298,\"elevation\":0.0,\"head\":5.3,\"roll\":0.0,\"pitch\":0.0},\"labels\":[]}}",
+    "headers": {
+        "X-Content-Type-Options": [
+            "nosniff"
+        ],
+        "X-XSS-Protection": [
+            "1; mode=block"
+        ],
+        "Cache-Control": [
+            "no-cache, no-store, max-age=0, must-revalidate"
+        ],
+        "Pragma": [
+            "no-cache"
+        ],
+        "Expires": [
+            "0"
+        ],
+        "Content-Type": [
+            "application/json"
+        ],
+        "Transfer-Encoding": [
+            "chunked"
+        ],
+        "Date": [
+            "Wed, 19 Mar 2025 08:21:26 GMT"
+        ],
+        "Keep-Alive": [
+            "timeout=60"
+        ],
+        "Connection": [
+            "keep-alive"
+        ]
+    },
+    "statusCode": "OK",
+    "statusCodeValue": 200
+}
+
+
+
+
+
+
+
+{
+    "code": 200,
+    "data": {
+        "osdDevice": {
+            "sn": "1581F5BKD224G00B4LZM",
+            "timestamp": 1741756638477,
+            "time": "2025-03-12T13:17:18",
+            "longitude": 0.0,
+            "latitude": -0.0,
+            "height": 1209.5298,
+            "elevation": 0.0,
+            "head": 5.3,
+            "roll": 0.0,
+            "pitch": 0.0
+        },
+        "labels": []
+    }
+}
+
+
+
+
+{
+    "code": 200,
+    "data": {
+        "osdDevice": {
+            "sn": "1581F5BKD224G00B4LZM",
+            "timestamp": 1741756638477,
+            "time": "2025-03-12T13:17:18",
+            "longitude": 0.0,
+            "latitude": -0.0,
+            "height": 1209.5298,
+            "elevation": 0.0,
+            "head": 5.3,
+            "roll": 0.0,
+            "pitch": 0.0
+        },
+        "labels": [
+
+
+
+        ]
+    }
+}
+
+
+
+@PostMapping("/mockArSpread")
+public String mockArSpread(@RequestBody MockArSpreadParam param) {
+    log.info("param={}", JSON.toJSONString(param));
+    String url = "http://52.111.97.86:8083/label/juHeList";
+    String response = restTemplate.postForObject(url, param, String.class);
+    log.info("response={}", response);
+    return response;
+}
