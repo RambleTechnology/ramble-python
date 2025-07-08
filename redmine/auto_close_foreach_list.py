@@ -165,9 +165,9 @@ def main():
     cookies = [
         {
             "name": "_redmine_session",
-            "value": "emJ1ZUY4N0xFaG5KUHhzSTFKMjRCOUF0YTI2VUJTMVJqY0RzSnM4ZkozK01FeVgyaFNRMWVlSHFHaHIvRHI3dGRNbTREZ2U3eHNhMDFEQ0Q1c1ZPY0JNQWp6Z2FDZDZYWXBsUjcvTHhhZlkwMTRuOW5lTTVOUGRyVGpqb0RaenVUTzBuejFPa3crbDVaYnhRQ2gyOHU2WWNDeUcvdnpiYmsvVjkrbHREUmNxZnVlRG01a051RDNwaVpHNzhodGNFVXZsRDdmYjl5V0JEK0NVeGxSWVd0Q3Npem1vSFNlbFRrckIxT2cvK0lveUhaRUZoc1piWXIwZGZvaUtHRVptWXV6VzNBZ29OVEhhUEJCRGFrZ1ZkMi81dDRDblppM0crSU1GSmZVVUlDMmhuZWZFdDNCTUQ1Tk1NRld5d1E3VGNyNUczM1Z5MDBFWmtzSHIvTWRWZEU2RVZzSElHcjdxcS95bGl3bjYxMkQ1dlU3UTN5Qlk5Y2x3emwwcmg4REQ3MTJhdHlnNGM2Rkk2NmlSa0t2cXE0TVBsZWZ1ckdyYnhDSEVJeE9WdjJNM1hYU2ZQN3Z0WUlBZDUrYmU0SWF0Y0dRb2FvL0gwdWtnYjAwZ1JnVzBHc1hjd2tqM1gwOCtVajlJZUpSQWxmdGFDcnpTS3ByZFZ5Y0hzYjNzVXdUazUtLXd1R0cremY2ekhJQmg4aUJkQktSVnc9PQ%3D%3D--498b184e0d442435ef76603ab6904e99da976514",
+            "value": "Q3pHWGtwdWsxVGVnY2tNUHJMOHZOY0tYYnRUc2Yrc1Avemw4RHhWVjBJOEZURVRFaHdCdkFBWXo4Ym9XeG5YL2tHY25LZXR6NkczZjYxVVhWWkhZampuaUpXRitRMklaam5xaHNTeTVjcHFFV1lvekFPRS9seGpZUmxWWFYxTHNSQUNMblBSOGcvRFRIa0RnbVEybTF4eGRiN3VoQUFwK1A4d3BEWkNjcjkvQ0FoUW0rL3VuRVQxTTVZQkVOWkpPeDRpMlZFekRoM1JLczVTYWVhNGI4TG45WE54MTdmSWZiNmJJQmlUL0tESjQ1b3FaNUVrYVdVdG5kdkYrMEozSUxRSWx1VUgyYVZnTWo4Q3pVcnV6ckZwTm5jUk9QUFlqY3VaWnM4RUQxQUlyR2ordHdpaFE0OVhSaS9aeVliMmZhLzM1TjR3YW4zK3dMVlAzTUpTK1o1UEFlWDFaZW9NV1BpeUowdHhsWDYvWTRyZVVGREtzdGVjNnIzSmFzalpLMEY0Q24vMWRNL1hBQ1ZadGdOQ2tnbU5ZcmJYUDQ4OTBEbGsyRzUwWGhlUFdqV3Z4MzllMkptQkpLREhrR0JtSkhnSlJ5bk5FbG9WVlBDa3dCNjU0WUhmYjVXYmRlNUxqRXV3YzBiM0Juby9sUWQrSmw5ZEQxUjlDdCt3ZnprdDQtLU1rd1FhTUROVXhLRVlDd2JUbU1pckE9PQ%3D%3D--eac205c1b24647297f0b1b0dfadc0317c98f18fe",
         },
-        {"name": "autologin", "value": "6a27b167495efa6ce451069be85c4eb9866a003b"},
+        {"name": "autologin", "value": "39775ccf8986d7eee3115886c87eec65da6e6510"},
     ]
 
     try:
@@ -178,7 +178,7 @@ def main():
             driver,
             #"http://demo.nghinsights.com:1234/redmine/work_time/show/p05029?day=5&month=3&prj=461&user=122&year=2025",
             # "http://demo.nghinsights.com:1234/redmine/work_time/index?day=19&month=3&prj=461&user=122&year=2025",
-              "http://demo.nghinsights.com:1234/redmine/work_time/index?day=13&month=5&prj=457&user=122&year=2025",
+              "http://demo.nghinsights.com:1234/redmine/work_time/index?day=4&month=7&prj=469&user=122&year=2025",
             cookies,
         )
 
