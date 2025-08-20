@@ -59,8 +59,13 @@ def query_to_insert(host, port, user, password, database, query_sql):
                     elif isinstance(value, (int, float)):
                         values.append(str(value))
                     else:
-                        # 处理字符串中的单引号
-                        escaped_value = str(value).replace("'", "''")
+                        # 先转义反斜杠，再转义双引号，再转义单引号
+                        escaped_value = (
+                            str(value)
+                            .replace("\\", "\\\\")
+                            .replace('"', '\\"')
+                            .replace("'", "''")
+                        )
                         values.append(f"'{escaped_value}'")
 
                 values_str = ", ".join(values)
@@ -99,9 +104,27 @@ if __name__ == "__main__":
     # """
 
     query_sql = """
-    SELECT `api_id`, `status_code`, `error_code`, `illustrate`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`
-    from op_api_error_code_setting
-    where api_id in (SELECT `API_ID` from op_api where GROUP_ID = '341d0a9e55d65ea4621c004dfae5c588')
+  
+
+
+SELECT `API_ID`, `RESULT_TYPE`, `RESULT_DESCRIPTION`, `RESULT_EXAMPLE`, `REVISION`, `CREATE_BY`, `CREATE_TIME`, `UPDATE_BY`, `UPDATE_TIME`
+from op_result_definition
+where api_id in (
+
+SELECT API_ID from op_api where GROUP_ID in (
+'341d0a9e55d65ea4621c004dfae5c588',
+'477aa16b64c84a7c0a87331a61e0c58b',
+'9198b326dd68920624b29fcc49c9447f',
+'98e10345d1af7ceb84c71b4c29496dd5',
+'fbc7df1e1206e5e3597909bb109a6ab2',
+'b2abbfb04416ec82e5d39c4a3a3c367b',
+'11ad2e7e51f20cf572ab6bbd5e14c482',
+'abcec60b511697aa4ef3d193c1634db6',
+'7cd67b10dcfb68e64bec4ff3762e27ac',
+'ae248bc0fa6a5004811b87fb7b0fa4cc'
+)
+
+)
     ;
     """
 

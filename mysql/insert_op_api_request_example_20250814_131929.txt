@@ -1,0 +1,128 @@
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('47af73d04aab4059ddccea44726a4cb1', '0', 'OkHttpClient client = new OkHttpClient().newBuilder()
+   .build();
+MediaType mediaType = MediaType.parse(\"application/json\");
+RequestBody body = RequestBody.create(mediaType, \"{\\r\\n    \\\"cameraIndexCodes\\\": [\\r\\n        \\\"e7b867af769d47fe8e2b2976ecd55404\\\",\\r\\n        \\\"6370711181564a7aa64e769d40db8ccc\\\"\\r\\n    ],\\r\\n    \\\"longitude\\\": 117.134871,\\r\\n    \\\"latitude\\\": 39.104812\\r\\n}\");
+Request request = new Request.Builder()
+   .url(\"http://192.168.1.126:8088/ngh-smart-datacenter/spread/compute\")
+   .method(\"POST\", body)
+   .addHeader(\"token\", \"dffffe74-1954-4919-a31b-7a034c76965a\")
+   .addHeader(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .addHeader(\"Content-Type\", \"application/json\")
+   .addHeader(\"Accept\", \"*/*\")
+   .addHeader(\"Host\", \"192.168.1.126:8088\")
+   .addHeader(\"Connection\", \"keep-alive\")
+   .build();
+Response response = client.newCall(request).execute();', '王乐乐', '2025-07-18 13:52:52', '王乐乐', '2025-07-18 13:52:52', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('ce0bc8490cf974aca48123b387fae373', '0', 'OkHttpClient client = new OkHttpClient().newBuilder()
+   .build();
+MediaType mediaType = MediaType.parse(\"application/json\");
+RequestBody body = RequestBody.create(mediaType, \"{\\r\\n    \\\"current\\\": 1,\\r\\n    \\\"size\\\": 10,\\r\\n    \\\"keyword\\\": \\\"\\\",\\r\\n    \\\"labelTypes\\\": [],\\r\\n    \\\"authField\\\": \\\"auth_field_1\\\",\\r\\n    \\\"regionId\\\": \\\"001031001014102\\\"\\r\\n}\");
+Request request = new Request.Builder()
+   .url(\"http://192.168.1.126:8088/ngh-smart-datacenter/poi/page\")
+   .method(\"POST\", body)
+   .addHeader(\"token\", \"dffffe74-1954-4919-a31b-7a034c76965a\")
+   .addHeader(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .addHeader(\"Content-Type\", \"application/json\")
+   .addHeader(\"Accept\", \"*/*\")
+   .addHeader(\"Host\", \"192.168.1.126:8088\")
+   .addHeader(\"Connection\", \"keep-alive\")
+   .build();
+Response response = client.newCall(request).execute();', '王乐乐', '2025-07-18 14:01:48', '管理员', '2025-08-06 11:22:38', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('f02038a18a59459466c8a1a361a8c71d', '0', 'Unirest.setTimeouts(0, 0);
+HttpResponse response = Unirest.post(\"http://127.0.0.1:8083/label/searchLabel\")
+   .header(\"token\", \"87cf0050-cbfd-4cbe-8370-816b8c51fd70\")
+   .header(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .header(\"Content-Type\", \"application/json\")
+   .header(\"Accept\", \"*/*\")
+   .header(\"Host\", \"127.0.0.1:8083\")
+   .header(\"Connection\", \"keep-alive\")
+   .body(\"{\\r\\n  \\\"keyword\\\": \\\"\\\",\\r\\n  \\\"labelTypeLogicIds\\\": null\\r\\n}\")
+   .asString();
+', '王乐乐', '2025-07-22 09:54:16', '普陀区管理员', '2025-08-06 14:59:48', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('e006c40e1414ef906bb365cb1426e71e', '0', 'Unirest.setTimeouts(0, 0);
+HttpResponse response = Unirest.post(\"http://192.168.1.126:8088/ngh-smart-ar/nearbyResource/coordinate\")
+   .header(\"token\", \"014efd48-22bd-42dc-9468-ca8cbecd91a1\")
+   .header(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .header(\"Content-Type\", \"application/json\")
+   .header(\"Accept\", \"*/*\")
+   .header(\"Host\", \"192.168.1.126:8088\")
+   .header(\"Connection\", \"keep-alive\")
+   .body(\"{\\r\\n    \\\"t\\\": 1716879328445,\\r\\n    \\\"longandlat\\\": \\\"106.66329558,26.69972986\\\",\\r\\n    \\\"scope\\\": 300,\\r\\n    \\\"resourceType\\\": [],\\r\\n    \\\"sortType\\\": 0,\\r\\n    \\\"adLogicId\\\": \\\"\\\",\\r\\n    \\\"regionId\\\": \\\"\\\"\\r\\n}\")
+   .asString();
+', '王乐乐', '2025-07-22 10:34:14', '普陀区管理员', '2025-08-05 16:52:01', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('f929095d6383f18e7340fd75e69329c1', '0', 'Unirest.setTimeouts(0, 0);
+HttpResponse response = Unirest.post(\"http://127.0.0.1:8084/business-resource/api/v1.0/event/importEvent\")
+   .header(\"token\", \"334b4f11-3bba-487d-8098-5351104598f1\")
+   .header(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .header(\"Content-Type\", \"application/json\")
+   .header(\"Accept\", \"*/*\")
+   .header(\"Host\", \"127.0.0.1:8084\")
+   .header(\"Connection\", \"keep-alive\")
+   .body(\"[\\r\\n    {\\r\\n        \\\"id\\\": \\\"1698214589#3101071100132106200\\\",\\r\\n        \\\"description\\\": \\\":非机动车违停\\\",\\r\\n        \\\"address\\\": \\\"上海市静安区广中西路275号\\\",\\r\\n        \\\"levelId\\\": \\\"0\\\",\\r\\n        \\\"startTime\\\": \\\"2023-12-01 10:12:41\\\",\\r\\n        \\\"latitude\\\": 31.258965,\\r\\n        \\\"longitude\\\": 121.404702,\\r\\n        \\\"divisionId\\\": \\\"001031001007\\\",\\r\\n        \\\"typeId\\\": \\\"0105051001\\\",\\r\\n        \\\"name\\\": \\\"非机动车违停\\\",\\r\\n        \\\"status\\\": \\\"1\\\",\\r\\n        \\\"imageFileName64\\\": \\\"\\\"\\r\\n    }\\r\\n]\")
+   .asString();
+', '王乐乐', '2025-07-24 14:34:58', '王乐乐', '2025-07-24 14:34:58', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('087272995cda5ff380b28b37c6d8d3c8', '0', 'Unirest.setTimeouts(0, 0);
+HttpResponse response = Unirest.post(\"http://127.0.0.1:8084/business-resource/api/v1.0/event/importEvent\")
+   .header(\"token\", \"334b4f11-3bba-487d-8098-5351104598f1\")
+   .header(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .header(\"Content-Type\", \"application/json\")
+   .header(\"Accept\", \"*/*\")
+   .header(\"Host\", \"127.0.0.1:8084\")
+   .header(\"Connection\", \"keep-alive\")
+   .body(\"[\\r\\n    {\\r\\n        \\\"id\\\": \\\"1698214589#3101071100132106200\\\",\\r\\n        \\\"description\\\": \\\":非机动车违停\\\",\\r\\n        \\\"address\\\": \\\"上海市静安区广中西路275号\\\",\\r\\n        \\\"levelId\\\": \\\"0\\\",\\r\\n        \\\"startTime\\\": \\\"2023-12-01 10:12:41\\\",\\r\\n        \\\"latitude\\\": 31.258965,\\r\\n        \\\"longitude\\\": 121.404702,\\r\\n        \\\"divisionId\\\": \\\"001031001007\\\",\\r\\n        \\\"typeId\\\": \\\"0105051001\\\",\\r\\n        \\\"name\\\": \\\"非机动车违停\\\",\\r\\n        \\\"status\\\": \\\"1\\\",\\r\\n        \\\"imageFileName64\\\": \\\"\\\"\\r\\n    }\\r\\n]\")
+   .asString();
+', '王乐乐', '2025-07-24 14:39:25', '管理员', '2025-08-06 16:27:29', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('7d5d6402af49c25b345647f86c3a8477', '0', 'Unirest.setTimeouts(0, 0);
+HttpResponse response = Unirest.post(\"http://127.0.0.1:8084/business-resource/api/v1.0/event/importEvent\")
+   .header(\"token\", \"334b4f11-3bba-487d-8098-5351104598f1\")
+   .header(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .header(\"Content-Type\", \"application/json\")
+   .header(\"Accept\", \"*/*\")
+   .header(\"Host\", \"127.0.0.1:8084\")
+   .header(\"Connection\", \"keep-alive\")
+   .body(\"[\\r\\n    {\\r\\n        \\\"id\\\": \\\"1698214589#3101071100132106200\\\",\\r\\n        \\\"description\\\": \\\":非机动车违停\\\",\\r\\n        \\\"address\\\": \\\"上海市静安区广中西路275号\\\",\\r\\n        \\\"levelId\\\": \\\"0\\\",\\r\\n        \\\"startTime\\\": \\\"2023-12-01 10:12:41\\\",\\r\\n        \\\"latitude\\\": 31.258965,\\r\\n        \\\"longitude\\\": 121.404702,\\r\\n        \\\"divisionId\\\": \\\"001031001007\\\",\\r\\n        \\\"typeId\\\": \\\"0105051001\\\",\\r\\n        \\\"name\\\": \\\"非机动车违停\\\",\\r\\n        \\\"status\\\": \\\"1\\\",\\r\\n        \\\"imageFileName64\\\": \\\"\\\"\\r\\n    }\\r\\n]\")
+   .asString();
+', '王乐乐', '2025-07-24 14:43:52', '管理员', '2025-08-06 11:21:04', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('a58ffd2aca56111119c5b986b4969b0f', '0', 'Unirest.setTimeouts(0, 0);
+HttpResponse response = Unirest.post(\"http://192.168.1.126:8088/ngh-smart-ar/calibration/create\")
+   .header(\"token\", \"e0e1685b-d67f-471b-b66f-6583ceb11a20\")
+   .header(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .header(\"Content-Type\", \"application/json\")
+   .header(\"Accept\", \"*/*\")
+   .header(\"Host\", \"192.168.1.126:8088\")
+   .header(\"Connection\", \"keep-alive\")
+   .body(\"{\\r\\n    \\\"calibration\\\": {\\r\\n        \\\"cameraIndex\\\": \\\"6370711181564a7aa64e769d40db8ccc\\\",\\r\\n        \\\"longitude\\\": 117.133992,\\r\\n        \\\"latitude\\\": 39.102669,\\r\\n        \\\"horizontal\\\": 180,\\r\\n        \\\"vertical\\\": 0,\\r\\n        \\\"high\\\": 86.38,\\r\\n        \\\"cameraType\\\": \\\"2\\\",\\r\\n        \\\"cameraName\\\": \\\"IPdome 02\\\",\\r\\n        \\\"calibration\\\": \\\"302.54/13.17/0.0/0.0/0.0/36.74/66.54/117.132353/39.1043816/216/155,302.54/13.17/0.0/0.0/0.0/28.87/43.08/117.1322991/39.1033596/44/201,302.54/13.17/0.0/0.0/0.0/19.52/62.24/117.1182092/39.1106458/52/85,302.54/13.17/0.0/0.0/0.0/40.85/43.54/117.1270665/39.1111007/240/80,347.07/18.74/0.0/0.0/0.0/50.74/47.81/117.1341002/39.10624/196/104,347.07/18.74/0.0/0.0/0.0/58.65/53.43/117.13536219/39.1125194/216/68,37.82/18.97/0.0/0.0/0.0/48.59/69.59/117.13609/39.1047315/164/119,37.82/18.97/0.0/0.0/0.0/34.67/56.86/117.1362472/39.10617/92/96,37.82/18.97/0.0/0.0/0.0/44.65/44.56/117.134976/39.1062/4/102,37.82/18.97/0.0/0.0/0.0/42.73/55.49/117.135892/39.107828/24/85,81.18/16.32/0.0/0.0/0.0/44.7/51.52/117.1387445/39.1037832/104/98,81.18/16.32/0.0/0.0/0.0/8.38/67.9/117.14522569/39.1041506/168/82\\\",\\r\\n        \\\"cameraRadius\\\": 1000,\\r\\n        \\\"cameraRadiusAngle\\\": 180,\\r\\n        \\\"panPos\\\": 12.45,\\r\\n        \\\"tiltPos\\\": 192,\\r\\n        \\\"cameraIndexCode\\\": \\\"6370711181564a7aa64e769d40db8ccc\\\"\\r\\n    },\\r\\n    \\\"calibrationSources\\\": [\\r\\n        {\\r\\n            \\\"bdImageUrl\\\": \\\"/ngh-file/ar/calibration/0f3937a5-e025-466f-accd-091830250353.png\\\",\\r\\n            \\\"dp\\\": 0,\\r\\n            \\\"dt\\\": 0,\\r\\n            \\\"dz\\\": 0,\\r\\n            \\\"bdPointList\\\": [\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.1308798,\\r\\n                    \\\"latitude\\\": 39.1046545,\\r\\n                    \\\"pixelX\\\": 32,\\r\\n                    \\\"pixelY\\\": 128\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.133422,\\r\\n                    \\\"latitude\\\": 39.1051515,\\r\\n                    \\\"pixelX\\\": 96,\\r\\n                    \\\"pixelY\\\": 128\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.135533,\\r\\n                    \\\"latitude\\\": 39.1046545,\\r\\n                    \\\"pixelX\\\": 160,\\r\\n                    \\\"pixelY\\\": 128\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.1369074,\\r\\n                    \\\"latitude\\\": 39.1031216,\\r\\n                    \\\"pixelX\\\": 224,\\r\\n                    \\\"pixelY\\\": 128\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.132353,\\r\\n                    \\\"latitude\\\": 39.1043816,\\r\\n                    \\\"pixelX\\\": 54,\\r\\n                    \\\"pixelY\\\": 155\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.13609,\\r\\n                    \\\"latitude\\\": 39.1047315,\\r\\n                    \\\"pixelX\\\": 169,\\r\\n                    \\\"pixelY\\\": 119\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.1322991,\\r\\n                    \\\"latitude\\\": 39.1033596,\\r\\n                    \\\"pixelX\\\": 11,\\r\\n                    \\\"pixelY\\\": 201\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.1341002,\\r\\n                    \\\"latitude\\\": 39.10624,\\r\\n                    \\\"pixelX\\\": 113,\\r\\n                    \\\"pixelY\\\": 104\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.1387445,\\r\\n                    \\\"latitude\\\": 39.1037832,\\r\\n                    \\\"pixelX\\\": 218,\\r\\n                    \\\"pixelY\\\": 98\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.1362472,\\r\\n                    \\\"latitude\\\": 39.10617,\\r\\n                    \\\"pixelX\\\": 151,\\r\\n                    \\\"pixelY\\\": 96\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.13536219,\\r\\n                    \\\"latitude\\\": 39.1125194,\\r\\n                    \\\"pixelX\\\": 118,\\r\\n                    \\\"pixelY\\\": 68\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.134976,\\r\\n                    \\\"latitude\\\": 39.1062,\\r\\n                    \\\"pixelX\\\": 129,\\r\\n                    \\\"pixelY\\\": 102\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.135892,\\r\\n                    \\\"latitude\\\": 39.107828,\\r\\n                    \\\"pixelX\\\": 134,\\r\\n                    \\\"pixelY\\\": 85\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.1182092,\\r\\n                    \\\"latitude\\\": 39.1106458,\\r\\n                    \\\"pixelX\\\": 13,\\r\\n                    \\\"pixelY\\\": 85\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.1270665,\\r\\n                    \\\"latitude\\\": 39.1111007,\\r\\n                    \\\"pixelX\\\": 60,\\r\\n                    \\\"pixelY\\\": 80\\r\\n                },\\r\\n                {\\r\\n                    \\\"longitude\\\": 117.14522569,\\r\\n                    \\\"latitude\\\": 39.1041506,\\r\\n                    \\\"pixelX\\\": 234,\\r\\n                    \\\"pixelY\\\": 82\\r\\n                }\\r\\n            ],\\r\\n            \\\"number\\\": 16\\r\\n        }\\r\\n    ]\\r\\n}\")
+   .asString();
+', '王乐乐', '2025-07-25 10:33:52', '王乐乐', '2025-07-25 10:33:52', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('16a26f093e15ff02574c2c3b0107aa3f', '0', 'Unirest.setTimeouts(0, 0);
+HttpResponse response = Unirest.post(\"http://127.0.0.1:8084/poi/create\")
+   .header(\"token\", \"852f4ba3-af17-4442-b266-e715a2a05723\")
+   .header(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .header(\"Content-Type\", \"application/json\")
+   .header(\"Accept\", \"*/*\")
+   .header(\"Host\", \"127.0.0.1:8084\")
+   .header(\"Connection\", \"keep-alive\")
+   .body(\"{    \\r\\n    \\\"logicId\\\": \\\"\\\",\\r\\n    \\\"labelTypeLogicId\\\": \\\"004018\\\",\\r\\n    \\\"poiName\\\": \\\"jj1\\\",\\r\\n    \\\"poiSource\\\": \\\"jj1\\\",\\r\\n    \\\"longitude\\\": \\\"120.275393\\\",\\r\\n    \\\"latitude\\\": \\\"32.01957\\\",\\r\\n    \\\"address\\\": \\\"jj1\\\",\\r\\n    \\\"needPush\\\": false\\r\\n}\")
+   .asString();
+', '王乐乐', '2025-07-25 10:37:44', '王乐乐', '2025-07-25 10:37:44', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('6693d75a6f91fae717c888a4eb938f72', '0', 'Unirest.setTimeouts(0, 0);
+HttpResponse response = Unirest.post(\"http://127.0.0.1:8084/business-resource/api/v1.0/event/importEvent\")
+   .header(\"token\", \"334b4f11-3bba-487d-8098-5351104598f1\")
+   .header(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .header(\"Content-Type\", \"application/json\")
+   .header(\"Accept\", \"*/*\")
+   .header(\"Host\", \"127.0.0.1:8084\")
+   .header(\"Connection\", \"keep-alive\")
+   .body(\"[\\r\\n    {\\r\\n        \\\"id\\\": \\\"1698214589#3101071100132106200\\\",\\r\\n        \\\"description\\\": \\\":非机动车违停\\\",\\r\\n        \\\"address\\\": \\\"上海市静安区广中西路275号\\\",\\r\\n        \\\"levelId\\\": \\\"0\\\",\\r\\n        \\\"startTime\\\": \\\"2023-12-01 10:12:41\\\",\\r\\n        \\\"latitude\\\": 31.258965,\\r\\n        \\\"longitude\\\": 121.404702,\\r\\n        \\\"divisionId\\\": \\\"001031001007\\\",\\r\\n        \\\"typeId\\\": \\\"0105051001\\\",\\r\\n        \\\"name\\\": \\\"非机动车违停\\\",\\r\\n        \\\"status\\\": \\\"1\\\",\\r\\n        \\\"imageFileName64\\\": \\\"\\\"\\r\\n    }\\r\\n]\")
+   .asString();', '管理员', '2025-08-06 13:32:41', '管理员', '2025-08-06 13:33:17', NULL, NULL);
+INSERT INTO `op_api_request_example` (`api_id`, `language_type`, `request_example`, `create_by`, `create_time`, `update_by`, `update_time`, `del_flag`, `version`) VALUES ('bcf938222bc41208f4057d175a05c87d', '0', 'Unirest.setTimeouts(0, 0);
+HttpResponse response = Unirest.post(\"http://127.0.0.1:8083/label/searchLabel\")
+   .header(\"token\", \"87cf0050-cbfd-4cbe-8370-816b8c51fd70\")
+   .header(\"User-Agent\", \"Apifox/1.0.0 (https://apifox.com)\")
+   .header(\"Content-Type\", \"application/json\")
+   .header(\"Accept\", \"*/*\")
+   .header(\"Host\", \"127.0.0.1:8083\")
+   .header(\"Connection\", \"keep-alive\")
+   .body(\"{\\r\\n  \\\"keyword\\\": \\\"\\\",\\r\\n  \\\"labelTypeLogicIds\\\": null\\r\\n}\")
+   .asString();
+', '管理员', '2025-08-06 13:57:00', '普陀区管理员', '2025-08-06 14:59:26', NULL, NULL);
