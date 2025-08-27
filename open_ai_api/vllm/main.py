@@ -4,6 +4,7 @@ import examples
 
 if __name__ == "__main__":
     examples.example_chat_completion()
+    examples.example_chat_completion_2()
     examples.example_completion()
     # examples.example_embeddings()
     # 如果有音频文件，可以启用：
