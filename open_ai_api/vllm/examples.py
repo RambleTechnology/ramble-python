@@ -16,6 +16,7 @@ def encode_image(image_path):
     except FileNotFoundError:
         print(f"警告: 图片文件未找到 {image_path}")
 
+
 def example_chat_completion():
     """聊天对话"""
     response = client.chat.completions.create(
@@ -50,7 +51,16 @@ def example_chat_completion_2():
     print_response("Chat Completion", response.choices[0].message.content)
 
 
+def example_chat_stream():
+    stream = client.chat.completions.create(
+        model=MODEL_NAME,
+        messages=[{"role": "user", "content": "基于<动枝生乱影，吹花送远香>这两句，你想到了什么，脑海中看到了什么？然后把感受写成一首诗。"}],
+        stream=True,
+    )
 
+    for chunk in stream:
+        if chunk.choices[0].delta.content:
+            print(chunk.choices[0].delta.content, end="", flush=True)
 
 
 def example_completion():
