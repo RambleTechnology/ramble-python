@@ -36,6 +36,7 @@ def get_video_url_by_vid(vid):
 
 # 使用示例
 # vid = "7507227785396522303"  # 替换为实际的_vid
-vid="7406332208941665563"
+# vid="7406332208941665563"
+vid="7529428962780876082"
 video_url = get_video_url_by_vid(vid)
 print("真实播放地址：", video_url)
