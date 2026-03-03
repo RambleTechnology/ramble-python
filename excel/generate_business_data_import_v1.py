@@ -4,7 +4,7 @@ import string
 
 # ===== 基本配置 =====
 ROW_COUNT = 300_000      # 行数，约 80~95MB，可自行调大/调小
-OUT_FILE = "导入性能测试数据.xlsx"
+OUT_FILE = "导入性能测试数据2.xlsx"
 
 # ===== Workbook（写入模式，省内存）=====
 wb = Workbook(write_only=True)
