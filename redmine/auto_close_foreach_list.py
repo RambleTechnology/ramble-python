@@ -165,9 +165,9 @@ def main():
     cookies = [
         {
             "name": "_redmine_session",
-            "value": "NkM5a0Z0Y2E1L3RTZW1QSTV5TVJ3dkdJeVZqdDhtQzhOYW1rK1VwSGRlOXJSd3IvaU16WHVGWEF4VGJMMDNZb05zemtqQW5QZmFWMmlLSDIzejg5VVdHR1VWTm8yQlV1NHRrTmRnK3AzdmtGWmxuejlNMjk2TlhEWW1UUG15UlFPdWZqWHJCNjNpblR2RGhleXZlbyt1aFFWTDE5alhyb3RoSXgyQ1hPTFdqWkM3VEdxT2FsdmJEaUxNRUk1dlVCcFZYRC9OQUVMQ3l4RzArNkpzTHlpVGc2bUtKNHpWWWFXQlRwOHpWb2pEc3B4U1lWVE5GUFVCQURkR1lGOFgrbjZEc2tZK3J5ZWhHL2NiQTZkaXJlU21FeFRCVnhKNHg2RUM4WGdGcUY3UStPb3lESm5rVXU5VDZpQmpuNnVFc2hZeHplaHlrbVloMjkyekYzanY0bTBGbzExWXNUR0NEejArcERvbnQxWEhPeER5anptMFBuSks5bGVqTVM4RVk3RHdHMzlmMk9xRUhWT0pyNlVzNkJ1MlQ0aGh2dkxNM2lNelVQVVVVbkNUNmwyMEh1UWZDYzZmQ091aWFyVEF0NHN4QWpMUjR2S0VkR29jWm5pV3hpb3cxSkRPQWdBcnEwTWFVWEl2V2xZci91MDQ3elRhTHdNMkFyN0dxYndoSFYtLVFEOHI3YWhIK3grdFg1NzZvejFpNnc9PQ%3D%3D--08e15c197e0e8e08a55881d86982847f1442af54",
+            "value": "cDdOVHE1VkZjckkwa0djeXg1V2h5M3hLeGtJcUtNNE1sTzgzU1NNOWxtcUl3RVRkcForeldlSm1XVlRIWmtwaTgvZiszYjlFd2pOQ1d6N0FxYThxbTVRUWFweml1VXBMYmpVbWRmU05ZTHFMTDgrS1FPOHFLU0c4SmhDMWtnTjl3ZkpwWGIvWnN1S2pxbjJEMFREUU1LSGY1b0M2cklvZDZYc3hBR21CaGZaZ0MvV0Z1RkdPcmNXb1RqT0Vwc0JBWFEwY045YkZKZTlCMHA0NHArZWNhWDczbXFGYjJwL2ZzQnRkNXpLbzk3STlzNEhPMWNDcW5JYjdoNkFNU3hGcHI4STV6RUxwVHBYOUZqYmdaakdDaVFVMUNTOEhPYXQ0YlBXa1VVRGJPSEZOeUMzNWR6N3Y3SGpaNVRGeDhZV2haeDR0L2dFR28zYlh4OFNXblAvNEc3RlAxUkloRVRaNEhlWC82dHdJcjVJdmw0cDdUVUFjdmRIRXJmeUpYUWtLaGthMVdvMWZqWVZENEFyUDdER2VIWHozVWlGdHdoV0hhU3VNOHk4WkUwcjhoZkxHa0JrbDZpdERzUC9SRW1JRVc1OGhkelFtbFJOcVEwY3JpM3pwd09xV1dpeXBtUm0xaU9XTGdlNXVKYTR3dlNqcUdZYzR4T1VNdWZENk14R3grYlUxZlZGV3hYZjJMYXMyTENEY0RUQU5hL04vZkNmcVcxTnhyUDZwdVNVPS0tUEx4TEN1MWRZd3FyZzlJdlFBdzRZQT09--cf307c945776ff3e3035b61931174e9ef96f0bbb",
         },
-        {"name": "autologin", "value": "38f91daedd7083c73ecc7c104a3bf86da40e183d"},
+        {"name": "autologin", "value": "585fcf4294c30606de7938c1af2a876886f3c7c2"},
     ]
 
     try:
@@ -178,7 +178,8 @@ def main():
             driver,
             #"http://demo.nghinsights.com:1234/redmine/work_time/show/p05029?day=5&month=3&prj=461&user=122&year=2025",
             # "http://demo.nghinsights.com:1234/redmine/work_time/index?day=19&month=3&prj=461&user=122&year=2025",
-              "http://demo.nghinsights.com:1234/redmine/work_time/index?day=3&month=3&prj=515&user=122&year=2026",
+            #   "http://demo.nghinsights.com:1234/redmine/work_time/index?day=30&month=4&prj=507&user=122&year=2026",
+              "http://demo.nghinsights.com:1234/redmine/work_time/index?day=9&month=5&prj=524&user=122&year=2026",
             cookies,
         )
 
