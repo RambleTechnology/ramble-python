@@ -5,7 +5,9 @@
 - [使用pandas框架操作excel示例](./pandas_excel/)
 - [redmine自动化操作](./redmine/)
 - [OpenAI api示例](./open_ai_api/vllm/)
-- [mcp执行无人机巡查任务](./mcp_exec_fly/)
 - [达梦数据库数据通过csv治理](./dm/)
 - [yolo识别车辆](./yolo/car_detection/)
+
+- [mcp执行无人机巡查任务](./mcp_exec_fly/)
+- [mcp部署jar到服务器](./mcp_depoly_jar/)
 
